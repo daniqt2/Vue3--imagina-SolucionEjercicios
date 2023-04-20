@@ -6,7 +6,7 @@ const searchVal = ref('')
 
 <template>
     <div>
-        <h1>Last deploy</h1>
+        <h1>MY LAST DEPLOY</h1>
         <input v-model="searchVal" />
         <p v-highlight="searchVal">Playa</p>
         <p v-highlight="searchVal">Fernanda</p>
