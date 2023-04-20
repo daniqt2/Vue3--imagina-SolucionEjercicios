@@ -1,5 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const searchVal = ref('')
+</script>
 
 <template>
-  <div></div>
+    <div>
+        <input v-model="searchVal" />
+        <p v-highlight="searchVal">Playa</p>
+        <p v-highlight="searchVal">Fernanda</p>
+        <p v-highlight="searchVal">Pelota</p>
+        <p v-highlight="searchVal">Rama</p>
+    </div>
 </template>
+
+<style scoped>
+.highlight {
+    color: red;
+}
+</style>
