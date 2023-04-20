@@ -5,6 +5,7 @@ const searchVal = ref('')
 </script>
 
 <template>
+    <h1>My last deploy</h1>
     <div>
         <input v-model="searchVal" />
         <p v-highlight="searchVal">Playa</p>
